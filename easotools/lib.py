@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def try_me():
-    raw_data=pd.read_excel('data/raw_data.xls')
+    raw_data=pd.read_excel('easotools/data/raw_data.xls')
     clean_data = ep.interpret(raw_data)
     clean_data
     fig, axes=plt.subplots(1,2, figsize=(11,5))
