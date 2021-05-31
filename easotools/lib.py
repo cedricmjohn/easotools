@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import os
 
 def try_me():
-    file_path = os.path.join(os.getcwd(),'easotools/data/raw_data.xls')
+    file_path = os.path.join(os.path.dirname(__file__),'data','raw_data.xls')
+    print(file_path)
     raw_data=pd.read_excel(file_path)
     clean_data = ep.interpret(raw_data)
     clean_data
