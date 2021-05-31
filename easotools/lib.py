@@ -1,9 +1,11 @@
 import easotools.plots as ep
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 def try_me():
-    raw_data=pd.read_excel('easotools/data/raw_data.xls')
+    file_path = os.path.join(os.getcwd(),'easotools/data/raw_data.xls')
+    raw_data=pd.read_excel(file_path)
     clean_data = ep.interpret(raw_data)
     clean_data
     fig, axes=plt.subplots(1,2, figsize=(11,5))
