@@ -1,6 +1,12 @@
 import easotools.plots as ep
+import pandas as pd
+import matplotlib.pyplot as plt
 
 def try_me():
+    i
+    raw_data=pd.read_excel('data/raw_data.xls')
+    clean_data = ep.interpret(raw_data)
+    clean_data
     fig, axes=plt.subplots(1,2, figsize=(11,5))
     clean_data['grouping']=['Bd-2 and H4','CF samples','CF samples','Bd-2 and H4']
     symbols=['*','s']
