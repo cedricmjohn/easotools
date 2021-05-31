@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def try_me():
-    i
     raw_data=pd.read_excel('data/raw_data.xls')
     clean_data = ep.interpret(raw_data)
     clean_data
